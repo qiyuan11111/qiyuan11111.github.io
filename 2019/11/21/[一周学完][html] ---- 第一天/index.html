@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="qiyuan的补题专栏">
 <meta property="og:description" content="任务内容1.开始写html2.基本标签&amp;amp;元素&amp;amp;属性">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-21T06:39:25.722Z">
+<meta property="og:updated_time" content="2019-11-22T10:57:59.241Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="qiyuan的补题专栏" type="application/atom+xml">
@@ -214,14 +214,32 @@
 <h2 id="任务内容"><a href="#任务内容" class="headerlink" title="任务内容"></a>任务内容</h2><p><strong>1.开始写html<br><strong>2.基本标签&amp;元素&amp;属性</p>
 <a id="more"></a>
 
-<h2 id="任务结果"><a href="#任务结果" class="headerlink" title="任务结果"></a>任务结果</h2><h3 id="开始写html"><a href="#开始写html" class="headerlink" title="开始写html"></a>开始写html</h3><p><code>&lt;!DOCTYPE&gt;</code> 声明是开头必须的，其中 <code>&lt;!DOCTYPE html&gt;</code> 表示我写的是html5</p>
+<h2 id="任务结果"><a href="#任务结果" class="headerlink" title="任务结果"></a>任务结果</h2><h3 id="一、开始写html"><a href="#一、开始写html" class="headerlink" title="一、开始写html"></a>一、开始写html</h3><p><code>&lt;!DOCTYPE&gt;</code> 声明是开头必须的，其中 <code>&lt;!DOCTYPE html&gt;</code> 表示我写的是html5</p>
 <p>结构为</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>注意结束符的斜杠为”/“,在 <code>head</code> 中一般加上</p>
+<p>注意结束符的斜杠为”/“,在 <code>&lt;head&gt;</code> 与 <code>&lt;/head&gt;</code> 之中一般加上</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta charset=&quot;utf-8&quot;&gt;</span><br></pre></td></tr></table></figure>
 <p>表示编码格式为 <code>utf-8</code>,支持中文<br><br></p>
-<h3 id="基本标签-amp-元素-amp-属性"><a href="#基本标签-amp-元素-amp-属性" class="headerlink" title="基本标签&amp;元素&amp;属性"></a>基本标签&amp;元素&amp;属性</h3><p><strong>1. <code>&lt;title&gt;</code> 元素<br>如下：</p>
+<h3 id="二、基本标签-amp-元素-amp-属性"><a href="#二、基本标签-amp-元素-amp-属性" class="headerlink" title="二、基本标签&amp;元素&amp;属性"></a>二、基本标签&amp;元素&amp;属性</h3><p><strong>1. <code>&lt;title&gt;</code> 元素</p>
+<p><strong>作用：</strong>给网页加一个页面标题</p>
+<p><strong>如下：</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>title标签<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>效果图：</strong><a href="http://60.205.187.87/%E4%B8%80%E5%91%A8%E5%AD%A6%E4%B9%A0/html/%E7%AC%AC%E4%B8%80%E5%A4%A9/2.1.html" target="_blank" rel="noopener">点我</a></p>
+<p><strong>2. <code>&lt;p&gt;</code> 元素</p>
+<p><strong>作用：</strong>另起一段落</p>
+<p><strong>如下：</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>title标签<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>p标签<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>p标签<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>效果图：</strong><a href="http://60.205.187.87/%E4%B8%80%E5%91%A8%E5%AD%A6%E4%B9%A0/html/%E7%AC%AC%E4%B8%80%E5%A4%A9/2.2.html" target="_blank" rel="noopener">点我</a></p>
+<p><strong>3. <code>&lt;h&gt;</code> 元素</p>
+<p><strong>作用：</strong>加一个标题</p>
+<p><strong>如下：</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>title标签<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span>标题一<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h2</span>&gt;</span>标题二<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h3</span>&gt;</span>标题三<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>效果图：</strong><a href="http://60.205.187.87/%E4%B8%80%E5%91%A8%E5%AD%A6%E4%B9%A0/html/%E7%AC%AC%E4%B8%80%E5%A4%A9/2.3.html" target="_blank" rel="noopener">点我</a></p>
+<p><strong>注意：</strong><code>&lt;h&gt;</code> 标题元素可以从 <code>&lt;h1&gt;</code> 已知沿用到 <code>&lt;h6&gt;</code>，数字大的为子标题。  </p>
 
       
 
@@ -355,7 +373,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#任务内容"><span class="toc-number">1.</span> <span class="toc-text">任务内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#任务结果"><span class="toc-number">2.</span> <span class="toc-text">任务结果</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#开始写html"><span class="toc-number">2.1.</span> <span class="toc-text">开始写html</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#基本标签-amp-元素-amp-属性"><span class="toc-number">2.2.</span> <span class="toc-text">基本标签&amp;元素&amp;属性</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#任务内容"><span class="toc-number">1.</span> <span class="toc-text">任务内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#任务结果"><span class="toc-number">2.</span> <span class="toc-text">任务结果</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、开始写html"><span class="toc-number">2.1.</span> <span class="toc-text">一、开始写html</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、基本标签-amp-元素-amp-属性"><span class="toc-number">2.2.</span> <span class="toc-text">二、基本标签&amp;元素&amp;属性</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -479,19 +497,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">poj</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">离散化</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">周任务</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">LCA</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">poj</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">离散化</a>
               </li>
             
             <div class="clearfix"></div>
