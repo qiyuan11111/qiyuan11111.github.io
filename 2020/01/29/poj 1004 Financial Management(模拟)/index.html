@@ -6,14 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>模拟 | qiyuan的补题专栏</title>
+  <title>Tag: 模拟,poj | qiyuan的补题专栏</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="模拟">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;%E6%A8%A1%E6%8B%9F&#x2F;index.html">
+  <meta name="description" content="题目内容题目：Financial Management 时间限制：1000MS 空间限制：10000K 链接地址：poj">
+<meta name="keywords" content="模拟,poj">
+<meta property="og:type" content="article">
+<meta property="og:title" content="poj 1004 Financial Management(模拟)">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;29&#x2F;poj%201004%20Financial%20Management(%E6%A8%A1%E6%8B%9F)&#x2F;index.html">
 <meta property="og:site_name" content="qiyuan的补题专栏">
+<meta property="og:description" content="题目内容题目：Financial Management 时间限制：1000MS 空间限制：10000K 链接地址：poj">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-01-28T14:26:22.066Z">
+<meta property="og:updated_time" content="2020-01-29T03:15:42.235Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="qiyuan的补题专栏" type="application/atom+xml">
@@ -210,27 +213,48 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-poj 1004 Financial Management(模拟)" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      模拟
+      poj 1004 Financial Management(模拟)
     </h1>
   
 
         
-        <a href="/%E6%A8%A1%E6%8B%9F/index.html" class="archive-article-date">
-  	<time datetime="2020-01-28T14:26:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-28</time>
+        <a href="/2020/01/29/poj%201004%20Financial%20Management(%E6%A8%A1%E6%8B%9F)/" class="archive-article-date">
+  	<time datetime="2020-01-29T03:11:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-29</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <br>
+
+<h2 id="题目内容"><a href="#题目内容" class="headerlink" title="题目内容"></a>题目内容</h2><p><strong>题目：</strong>Financial Management</p>
+<p><strong>时间限制：</strong>1000MS</p>
+<p><strong>空间限制：</strong>10000K</p>
+<p><strong>链接地址：</strong><a href="http://poj.org/problem?id=1004" target="_blank" rel="noopener">poj</a></p>
+<a id="more"></a>
+
+<p><font size = 4 color = blue><strong>Description</font></p>
+<p>Larry graduated this year and finally has a job. He’s making a lot of money, but somehow never seems to have enough. Larry has decided that he needs to grab hold of his financial portfolio and solve his financing problems. The first step is to figure out what’s been going on with his money. Larry has his bank account statements and wants to see how much money he has. Help Larry by writing a program to take his closing balance from each of the past twelve months and calculate his average account balance.</p>
+<p><font size = 4 color = blue><strong>Iuput</font></p>
+<p>The input will be twelve lines. Each line will contain the closing balance of his bank account for a particular month. Each number will be positive and displayed to the penny. No dollar sign will be included.</p>
+<p><font size = 4 color = blue><strong>Ouput</font></p>
+<p>The output will be a single number, the average (mean) of the closing balances for the twelve months. It will be rounded to the nearest penny, preceded immediately by a dollar sign, and followed by the end-of-line. There will be no other spaces or characters in the output.</p>
+<p><font size = 4 color = blue><strong>Sample Input</font></p>
+<p>100.00<br>489.12<br>12454.12<br>1234.10<br>823.05<br>109.20<br>5.27<br>1542.25<br>839.18<br>83.99<br>1295.01<br>1.75</p>
+<p><font size = 4 color = blue><strong>Sample Onput</font></p>
+<p>$1581.42</p>
+<p><font size = 4 color = blue><strong>Source</font></p>
+<p><a href="http://poj.org/searchproblem?field=source&key=Mid-Atlantic+2001" target="_blank" rel="noopener">Mid-Atlantic 2001</a><br><br></p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">double</span> sum = <span class="number">0.0</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">12</span>; i++)&#123;</span><br><span class="line">		<span class="keyword">double</span> a;</span><br><span class="line">		<span class="built_in">cin</span> &gt;&gt; a;</span><br><span class="line">		sum += <span class="number">100</span>*a;</span><br><span class="line">	&#125;</span><br><span class="line">	sum /= <span class="number">12</span>;</span><br><span class="line">	<span class="keyword">double</span> point = sum - (<span class="keyword">int</span>)sum;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"$"</span>;</span><br><span class="line">	<span class="keyword">if</span>(point &gt;= <span class="number">0.5</span>)	<span class="built_in">cout</span> &lt;&lt; sum/<span class="number">100</span> + <span class="number">0.01</span>;</span><br><span class="line">	<span class="keyword">else</span> <span class="built_in">cout</span> &lt;&lt; sum/<span class="number">100</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
       
 
       
@@ -259,6 +283,21 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">模拟</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">poj</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -309,7 +348,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/%E6%A8%A1%E6%8B%9F/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/01/29/poj%201004%20Financial%20Management(%E6%A8%A1%E6%8B%9F)/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -321,6 +360,16 @@
 </article>
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/2020/01/28/poj%201003%20Hangover(%E6%A8%A1%E6%8B%9F)/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">poj 1003 Hangover(模拟)</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -342,7 +391,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#题目内容"><span class="toc-number">1.</span> <span class="toc-text">题目内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码"><span class="toc-number">2.</span> <span class="toc-text">代码</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -384,9 +433,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: false,
