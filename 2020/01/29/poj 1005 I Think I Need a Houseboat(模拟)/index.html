@@ -6,14 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: hdoj | qiyuan的补题专栏</title>
+  <title>Tag: 模拟,poj | qiyuan的补题专栏</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="qiyuan的补题专栏">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;tags&#x2F;hdoj&#x2F;index.html">
+  <meta name="description" content="题目内容题目：I Think I Need a Houseboat 时间限制：1000MS 空间限制：10000K 链接地址：poj">
+<meta name="keywords" content="poj,模拟">
+<meta property="og:type" content="article">
+<meta property="og:title" content="poj 1005 I Think I Need a Houseboat(模拟)">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;29&#x2F;poj%201005%20I%20Think%20I%20Need%20a%20Houseboat(%E6%A8%A1%E6%8B%9F)&#x2F;index.html">
 <meta property="og:site_name" content="qiyuan的补题专栏">
+<meta property="og:description" content="题目内容题目：I Think I Need a Houseboat 时间限制：1000MS 空间限制：10000K 链接地址：poj">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http:&#x2F;&#x2F;poj.org&#x2F;images&#x2F;1005&#x2F;semicircle.GIF">
+<meta property="og:updated_time" content="2020-01-29T03:47:18.686Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;poj.org&#x2F;images&#x2F;1005&#x2F;semicircle.GIF">
   
     <link rel="alternative" href="/atom.xml" title="qiyuan的补题专栏" type="application/atom+xml">
   
@@ -215,64 +221,214 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-poj 1005 I Think I Need a Houseboat(模拟)" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/11/02/hdoj%201394%20Minimum%20Inversion%20Number(%E4%B8%BB%E5%B8%AD%E6%A0%91)/" class="archive-article-date">
-  	<time datetime="2019-11-02T14:29:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-02</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/11/02/hdoj%201394%20Minimum%20Inversion%20Number(%E4%B8%BB%E5%B8%AD%E6%A0%91)/">hdoj 1394 Minimum Inversion Number(权值线段树)</a>
+    <h1 class="article-title" itemprop="name">
+      poj 1005 I Think I Need a Houseboat(模拟)
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2020/01/29/poj%201005%20I%20Think%20I%20Need%20a%20Houseboat(%E6%A8%A1%E6%8B%9F)/" class="archive-article-date">
+  	<time datetime="2020-01-29T03:43:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <br>
+
+<h2 id="题目内容"><a href="#题目内容" class="headerlink" title="题目内容"></a>题目内容</h2><p><strong>题目：</strong>I Think I Need a Houseboat</p>
+<p><strong>时间限制：</strong>1000MS</p>
+<p><strong>空间限制：</strong>10000K</p>
+<p><strong>链接地址：</strong><a href="http://poj.org/problem?id=1005" target="_blank" rel="noopener">poj</a></p>
+<a id="more"></a>
+
+<p><font size = 4 color = blue><strong>Description</font></p>
+<p>Fred Mapper is considering purchasing some land in Louisiana to build his house on. In the process of investigating the land, he learned that the state of Louisiana is actually shrinking by 50 square miles each year, due to erosion caused by the Mississippi River. Since Fred is hoping to live in this house the rest of his life, he needs to know if his land is going to be lost to erosion.</p>
+<p>After doing more research, Fred has learned that the land that is being lost forms a semicircle. This semicircle is part of a circle centered at (0,0), with the line that bisects the circle being the X axis. Locations below the X axis are in the water. The semicircle has an area of 0 at the beginning of year 1. (Semicircle illustrated in the Figure.)</p>
+<p><img src="http://poj.org/images/1005/semicircle.GIF" alt="avatar"></p>
+<p><font size = 4 color = blue><strong>Iuput</font></p>
+<p>The first line of input will be a positive integer indicating how many data sets will be included (N). Each of the next N lines will contain the X and Y Cartesian coordinates of the land Fred is considering. These will be floating point numbers measured in miles. The Y coordinate will be non-negative. (0,0) will not be given.</p>
+<p><font size = 4 color = blue><strong>Ouput</font></p>
+<p>For each data set, a single line of output should appear. This line should take the form of: “Property N: This property will begin eroding in year Z.” Where N is the data set (counting from 1), and Z is the first year (start from 1) this property will be within the semicircle AT THE END OF YEAR Z. Z must be an integer. After the last data set, this should print out “END OF OUTPUT.”</p>
+<p><font size = 4 color = blue><strong>Sample Input</font></p>
+<p>2<br>1.0 1.0<br>25.0 0.0</p>
+<p><font size = 4 color = blue><strong>Sample Onput</font></p>
+<p>Property 1: This property will begin eroding in year 1.<br>Property 2: This property will begin eroding in year 20.<br>END OF OUTPUT.</p>
+<p><font size = 4 color = blue><strong>Source</font></p>
+<p><a href="http://poj.org/searchproblem?field=source&key=Mid-Atlantic+2001" target="_blank" rel="noopener">Mid-Atlantic 2001</a><br><br></p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pi acos(-1)</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> cas;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">cin</span> &gt;&gt; cas;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= cas; i++)&#123;</span><br><span class="line">		<span class="keyword">double</span> x, y;</span><br><span class="line">		<span class="built_in">cin</span> &gt;&gt; x &gt;&gt; y;</span><br><span class="line">		<span class="keyword">double</span> r2 = x * x + y * y;</span><br><span class="line">		<span class="keyword">double</span> area = pi * r2 / <span class="number">2</span>;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; <span class="string">"Property "</span> &lt;&lt; i &lt;&lt; <span class="string">": This property will begin eroding in year "</span> &lt;&lt; (<span class="keyword">int</span>)(area/<span class="number">50.0</span>) + <span class="number">1</span> &lt;&lt; <span class="string">"."</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"END OF OUTPUT."</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hdoj</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">poj</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">主席树</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">模拟</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/01/29/poj%201005%20I%20Think%20I%20Need%20a%20Houseboat(%E6%A8%A1%E6%8B%9F)/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2020/01/29/poj%201006%20Biorhythms(%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86)/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          poj 1006 Biorhythms(中国剩余定理)
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2020/01/29/poj%201004%20Financial%20Management(%E6%A8%A1%E6%8B%9F)/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">poj 1004 Financial Management(模拟)</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#题目内容"><span class="toc-number">1.</span> <span class="toc-text">题目内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码"><span class="toc-number">2.</span> <span class="toc-text">代码</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -295,7 +451,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: true,
 		isCategory: false,
