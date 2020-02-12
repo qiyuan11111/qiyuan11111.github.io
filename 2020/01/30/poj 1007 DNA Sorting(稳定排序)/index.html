@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 中国剩余定理,poj | qiyuan的补题专栏</title>
+  <title>Tag: 稳定排序,poj | qiyuan的补题专栏</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="题目内容题目：Biorhythms 时间限制：1000MS 空间限制：10000K 链接地址：poj">
-<meta name="keywords" content="poj,中国剩余定理">
+  <meta name="description" content="题目内容题目：DNA Sorting 时间限制：1000MS 空间限制：10000K 链接地址：poj">
+<meta name="keywords" content="poj,稳定排序">
 <meta property="og:type" content="article">
-<meta property="og:title" content="poj 1006 Biorhythms(中国剩余定理)">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;29&#x2F;poj%201006%20Biorhythms(%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86)&#x2F;index.html">
+<meta property="og:title" content="poj 1007 DNA Sorting(稳定排序)">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;30&#x2F;poj%201007%20DNA%20Sorting(%E7%A8%B3%E5%AE%9A%E6%8E%92%E5%BA%8F)&#x2F;index.html">
 <meta property="og:site_name" content="qiyuan的补题专栏">
-<meta property="og:description" content="题目内容题目：Biorhythms 时间限制：1000MS 空间限制：10000K 链接地址：poj">
+<meta property="og:description" content="题目内容题目：DNA Sorting 时间限制：1000MS 空间限制：10000K 链接地址：poj">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-01-30T12:24:42.065Z">
+<meta property="og:updated_time" content="2020-01-30T12:25:49.040Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="qiyuan的补题专栏" type="application/atom+xml">
@@ -225,20 +225,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-poj 1006 Biorhythms(中国剩余定理)" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-poj 1007 DNA Sorting(稳定排序)" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      poj 1006 Biorhythms(中国剩余定理)
+      poj 1007 DNA Sorting(稳定排序)
     </h1>
   
 
         
-        <a href="/2020/01/29/poj%201006%20Biorhythms(%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86)/" class="archive-article-date">
-  	<time datetime="2020-01-29T12:25:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-29</time>
+        <a href="/2020/01/30/poj%201007%20DNA%20Sorting(%E7%A8%B3%E5%AE%9A%E6%8E%92%E5%BA%8F)/" class="archive-article-date">
+  	<time datetime="2020-01-30T12:18:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-30</time>
 </a>
         
       </header>
@@ -247,27 +247,26 @@
       
         <br>
 
-<h2 id="题目内容"><a href="#题目内容" class="headerlink" title="题目内容"></a>题目内容</h2><p><strong>题目：</strong>Biorhythms</p>
+<h2 id="题目内容"><a href="#题目内容" class="headerlink" title="题目内容"></a>题目内容</h2><p><strong>题目：</strong>DNA Sorting</p>
 <p><strong>时间限制：</strong>1000MS</p>
 <p><strong>空间限制：</strong>10000K</p>
-<p><strong>链接地址：</strong><a href="http://poj.org/problem?id=1006" target="_blank" rel="noopener">poj</a></p>
+<p><strong>链接地址：</strong><a href="http://poj.org/problem?id=1007" target="_blank" rel="noopener">poj</a></p>
 <a id="more"></a>
 
 <p><font size = 4 color = blue><strong>Description</font></p>
-<p>Some people believe that there are three cycles in a person’s life that start the day he or she is born. These three cycles are the physical, emotional, and intellectual cycles, and they have periods of lengths 23, 28, and 33 days, respectively. There is one peak in each period of a cycle. At the peak of a cycle, a person performs at his or her best in the corresponding field (physical, emotional or mental). For example, if it is the mental curve, thought processes will be sharper and concentration will be easier.<br>Since the three cycles have different periods, the peaks of the three cycles generally occur at different times. We would like to determine when a triple peak occurs (the peaks of all three cycles occur in the same day) for any person. For each cycle, you will be given the number of days from the beginning of the current year at which one of its peaks (not necessarily the first) occurs. You will also be given a date expressed as the number of days from the beginning of the current year. You task is to determine the number of days from the given date to the next triple peak. The given date is not counted. For example, if the given date is 10 and the next triple peak occurs on day 12, the answer is 2, not 3. If a triple peak occurs on the given date, you should give the number of days to the next occurrence of a triple peak.</p>
+<p>One measure of ``unsortedness’’ in a sequence is the number of pairs of entries that are out of order with respect to each other. For instance, in the letter sequence ``DAABEC’’, this measure is 5, since D is greater than four letters to its right and E is greater than one letter to its right. This measure is called the number of inversions in the sequence. The sequence ``AACEDGG’’ has only one inversion (E and D)—it is nearly sorted—while the sequence ``ZWQM’’ has 6 inversions (it is as unsorted as can be—exactly the reverse of sorted).</p>
+<p>You are responsible for cataloguing a sequence of DNA strings (sequences containing only the four letters A, C, G, and T). However, you want to catalog them, not in alphabetical order, but rather in order of ``sortedness’’, from ``most sorted’’ to ``least sorted’’. All the strings are of the same length.</p>
 <p><font size = 4 color = blue><strong>Iuput</font></p>
-<p>You will be given a number of cases. The input for each case consists of one line of four integers p, e, i, and d. The values p, e, and i are the number of days from the beginning of the current year at which the physical, emotional, and intellectual cycles peak, respectively. The value d is the given date and may be smaller than any of p, e, or i. All values are non-negative and at most 365, and you may assume that a triple peak will occur within 21252 days of the given date. The end of input is indicated by a line in which p = e = i = d = -1.</p>
+<p>The first line contains two integers: a positive integer n (0 &lt; n &lt;= 50) giving the length of the strings; and a positive integer m (0 &lt; m &lt;= 100) giving the number of strings. These are followed by m lines, each containing a string of length n.</p>
 <p><font size = 4 color = blue><strong>Ouput</font></p>
-<p>For each test case, print the case number followed by a message indicating the number of days to the next triple peak, in the form:</p>
-<p>Case 1: the next triple peak occurs in 1234 days.</p>
-<p>Use the plural form ``days’’ even if the answer is 1.</p>
+<p>Output the list of input strings, arranged from ``most sorted’’ to ``least sorted’’. Since two strings can be equally sorted, then output them according to the orginal order.</p>
 <p><font size = 4 color = blue><strong>Sample Input</font></p>
-<p>0 0 0 0<br>0 0 0 100<br>5 20 34 325<br>4 5 6 7<br>283 102 23 320<br>203 301 203 40<br>-1 -1 -1 -1</p>
+<p>10 6<br>AACATGAAGG<br>TTTTGGCCAA<br>TTTGGCCAAA<br>GATCAGATTT<br>CCCGGGGGGA<br>ATCGATGCAT</p>
 <p><font size = 4 color = blue><strong>Sample Onput</font></p>
-<p>Case 1: the next triple peak occurs in 21252 days.<br>Case 2: the next triple peak occurs in 21152 days.<br>Case 3: the next triple peak occurs in 19575 days.<br>Case 4: the next triple peak occurs in 16994 days.<br>Case 5: the next triple peak occurs in 8910 days.<br>Case 6: the next triple peak occurs in 10789 days.</p>
+<p>CCCGGGGGGA<br>AACATGAAGG<br>GATCAGATTT<br>ATCGATGCAT<br>TTTTGGCCAA<br>TTTGGCCAAA</p>
 <p><font size = 4 color = blue><strong>Source</font></p>
-<p><a href="http://poj.org/searchproblem?field=source&key=East+Central+North+America+1999" target="_blank" rel="noopener">East Central North America 1999</a><br><br></p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> p, e, i, d;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> M = <span class="number">21252</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> cnt = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span>(<span class="built_in">cin</span> &gt;&gt; p &gt;&gt; e &gt;&gt; i &gt;&gt; d)&#123;</span><br><span class="line">		<span class="keyword">if</span>(d == <span class="number">-1</span> &amp;&amp; p == e &amp;&amp; e == i &amp;&amp; i == d)	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">int</span> ans = (<span class="number">5544</span> * p + <span class="number">14421</span> * e + <span class="number">1288</span> * i - d + M) % M;</span><br><span class="line">		<span class="keyword">if</span>(ans == <span class="number">0</span>)	ans = M;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; <span class="string">"Case "</span> &lt;&lt; cnt++ &lt;&lt; <span class="string">": the next triple peak occurs in "</span> &lt;&lt; ans &lt;&lt; <span class="string">" days."</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><a href="http://poj.org/searchproblem?field=source&key=East+Central+North+America+1998" target="_blank" rel="noopener">East Central North America 1998</a><br><br></p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxm = <span class="number">105</span>;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">strings</span>&#123;</span></span><br><span class="line">	<span class="built_in">string</span> s;</span><br><span class="line">	<span class="keyword">int</span> data;</span><br><span class="line">	strings()&#123;</span><br><span class="line">		s = <span class="string">""</span>;</span><br><span class="line">		data = <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;; </span><br><span class="line">strings str[maxm];</span><br><span class="line"><span class="keyword">int</span> n, m;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">comp</span><span class="params">(strings a, strings b)</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> a.data &lt; b.data;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">cin</span> &gt;&gt; n &gt;&gt; m;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++)&#123;</span><br><span class="line">		<span class="built_in">string</span> ss;</span><br><span class="line">		<span class="built_in">cin</span> &gt;&gt; ss;</span><br><span class="line">		str[i].s = ss;</span><br><span class="line">		<span class="keyword">int</span> cnt = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n<span class="number">-1</span>; i++)&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> j = i+<span class="number">1</span>; j &lt; n; j++)&#123;</span><br><span class="line">				<span class="keyword">if</span>(ss[i] &gt; ss[j])	cnt++;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		str[i].data = cnt;</span><br><span class="line">	&#125;</span><br><span class="line">	stable_sort(str+<span class="number">1</span>, str+m+<span class="number">1</span>, comp);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++)&#123;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; str[i].s &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
 
       
@@ -305,7 +304,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">中国剩余定理</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">稳定排序</a>
         		</li>
       		
 		</ul>
@@ -361,7 +360,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/01/29/poj%201006%20Biorhythms(%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86)/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/01/30/poj%201007%20DNA%20Sorting(%E7%A8%B3%E5%AE%9A%E6%8E%92%E5%BA%8F)/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -375,18 +374,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/01/30/poj%201007%20DNA%20Sorting(%E7%A8%B3%E5%AE%9A%E6%8E%92%E5%BA%8F)/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/01/30/poj%201008%20Maya%20Calendar(%E6%A8%A1%E6%8B%9F)/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          poj 1007 DNA Sorting(稳定排序)
+          poj 1008 Maya Calendar(模拟)
         
       </div>
     </a>
   
   
-    <a href="/2020/01/29/poj%201005%20I%20Think%20I%20Need%20a%20Houseboat(%E6%A8%A1%E6%8B%9F)/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">poj 1005 I Think I Need a Houseboat(模拟)</div>
+    <a href="/2020/01/29/poj%201006%20Biorhythms(%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86)/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">poj 1006 Biorhythms(中国剩余定理)</div>
       <i class="icon-circle-right"></i>
     </a>
   
